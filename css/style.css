@@ -6,7 +6,7 @@
 	Tags: black, dark, white, red, two-columns, fluid-layout, responsive-layout, custom-menu, custom-colors, editor-style, featured-images, flexible-header, post-formats, sticky-post, threaded-comments, translation-ready
 	Author: Anders Norén
 	Author URI: http://www.andersnoren.se
-	Theme URI: http://www.andersnoren.se/teman/wilson-wordpress-theme/
+	Theme URI: http://www.andersnorenㅠ.se/teman/wilson-wordpress-theme/
 	License: GNU General Public License version 2.0
 	License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	
@@ -190,7 +190,7 @@ a.more-link,
 	width: 1160px;
 	max-width: 86%;
 	margin: 0 auto;
-	background: url('images/1px-white.png') right repeat-y;
+	background: url('../images/1px-white.png') right repeat-y;
 	background-size: 68% auto;
 }
 
