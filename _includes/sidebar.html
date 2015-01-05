@@ -1,0 +1,88 @@
+<div class="sidebar">
+  <div class="blog-header">
+    <h1 class="blog-title">
+      <a href="{{ '/'  | prepend: site.baseurl }}" title="FRNEDS" rel="home">FRENDS</a>
+    </h1>
+    <h3 class="blog-description">FRont-ENd DeveloperS</h3>
+  </div> <!-- /blog-header -->
+
+  <div class="nav-toggle toggle">
+    <p>
+      <span class="show">Show menu</span>
+      <span class="hide">Hide menu</span>
+    </p>
+    <div class="bars">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="clear"></div>
+    </div>
+  </div>
+
+  <div class="blog-menu">
+    <ul class="navigation">
+      <li class="menu-item menu-item-type-custom menu-item-object-custom">
+        <a href="{{ '/'  | prepend: site.baseurl }}">Home</a>
+      </li>
+      <li class="menu-item menu-item-type-post_type menu-item-object-page">
+        <a href="{{ '/members/'  | prepend: site.baseurl }}">Members</a>
+      </li>
+      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children has-children">
+        <a href="#">Seminar</a>
+        <ul class="sub-menu">
+          <li class="menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="http://toolcon.frends.kr/">ToolCon 2014</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <div class="clear"></div>
+  </div>
+
+  <div class="mobile-menu">
+    <ul class="navigation">
+      <li class="menu-item menu-item-type-custom menu-item-object-custom">
+        <a href="{{ '/'  | prepend: site.baseurl }}">Home</a>
+      </li>
+      <li class="menu-item menu-item-type-post_type menu-item-object-page">
+        <a href="{{ '/members/'  | prepend: site.baseurl }}">Members</a>
+      </li>
+      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children has-children">
+        <a href="#">Seminar</a>
+        <ul class="sub-menu">
+          <li class="menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="http://toolcon.frends.kr/">ToolCon 2014</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="widgets" role="complementary">
+    <div class="widget widget_recent_entries">
+      <div class="widget-content">
+        <h3 class="widget-title">Recent Posts</h3>
+        <ul>
+          {% for post in site.posts limit:7 %}
+          <li>
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="widget widget_text">
+      <div class="widget-content">
+        <h3 class="widget-title">About FRENDS</h3>
+        <div class="textwidget">
+          <p>
+            프론트앤드 개발자 모임입니다.
+          </p>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div><!-- /widgets -->
+
+</div> <!-- /sidebar -->

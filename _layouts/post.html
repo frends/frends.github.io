@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<div class="post type-post status-publish format-standard has-post-thumbnail hentry category-design tag-braun tag-dieter-rams has-featured-image">
+  {% if page.featured-media %}
+  <div class="featured-media">
+    <a href="{{ page.url | prepend: site.baseurl }}" rel="bookmark" title="{{ page.title }}">
+      <img src="page.featured-media" class="attachment-post-image wp-post-image" alt="featured image">
+      <div class="media-caption-container">
+        <p class="media-caption">{{ page.featured-caption }}</p>
+      </div>
+    </a>
+  </div>
+  {% endif %}
+
+  <div class="post-inner">
+    <div class="post-header">
+      <h2 class="post-title">
+        <a href="{{ page.url | prepend: site.baseurl }}" rel="bookmark" title="{{ page.title}}">{{ page.title }}</a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><a href="{{ page.url | prepend: site.baseurl }}" title="{{ page.title}}">{{ page.date | date: "%b %-d, %Y" }}</a></span>
+      </div>
+    </div> <!-- /post-header -->
+
+    <div class="post-content">
+      {{ content }}
+    </div>
+    <div class="clear"></div>
+  </div>
+
+</div>

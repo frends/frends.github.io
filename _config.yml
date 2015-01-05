@@ -1,0 +1,9 @@
+# Site settings
+title: FRENDS
+description: >
+  FRond-ENd DeveloperS
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://fends.github.io"
+
+# Build settings
+markdown: kramdown

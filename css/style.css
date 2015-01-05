@@ -875,10 +875,7 @@ code, kbd, pre {
 }
 
 .post-content .highlight {
-	background: #fcf8a5;
-	width: auto;
-	display: inline;
-	padding: 2px 3px;
+	padding: 0 3px 10px;
 }
 
 .post-content kbd,
