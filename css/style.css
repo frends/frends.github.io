@@ -741,6 +741,39 @@ a.more-link,
 	text-decoration: none;
 }
 
+/* members --------------------------------------- */
+.members {
+  text-align: center;
+}
+
+.member {
+  display: inline-block;
+  text-align: center;
+  width: 200px;
+  margin-bottom: 30px;
+}
+
+.member .nickname {
+  margin: 0 0 5px 0;
+  text-align: center;
+}
+
+.member .avatar {
+  display: block;
+  border: 2px solid #EEE;
+  padding: 5px;
+  box-sizing: border-box;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	float: left;
+  margin: 0 25px;
+}
+		
+.member .avatar-150 {
+  width: 150px;
+  height: 150px;
+}
 
 /* -------------------------------------------------------------------------------- */
 /*	8. Single post
