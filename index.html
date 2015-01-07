@@ -26,7 +26,11 @@ layout: default
     </div>
 
     <div class="post-content">
-      {{ post.content | truncatewords:120}}
+      {% if post.content contains "<!-- more -->" %}
+        {{ post.content | split:"<!-- more -->" | first % }}
+      {% else %}
+        {{ post.content | truncatewords:120 }}
+      {% endif %}
       <p><a href="{{ post.url | prepend: site.baseurl }}" class="more-link">Continue reading</a></p>
     </div>
     <div class="clear"></div>
